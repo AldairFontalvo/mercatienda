@@ -17,28 +17,25 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
 ### 2. Configurar las variables de entorno
 
-cp .env.example .env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=nombre_de_tu_base_de_datos
-DB_USERNAME=tu_usuario
-DB_PASSWORD=tu_contraseña
+- cp .env.example .env
+- DB_CONNECTION=mysql
+- DB_HOST=127.0.0.1
+- DB_PORT=3306
+- DB_DATABASE=nombre_de_tu_base_de_datos
+- DB_USERNAME=tu_usuario
+- DB_PASSWORD=tu_contraseña
 
-### 3. Ejecuta las migraciones
+### 3. Instalar dependencias de PHP
+composer install
+
+### 4. Ejecuta las migraciones
 php artisan migrate
 
-### 4. Ejecuta el servidor de desarrollo
+### 5. Ejecuta el servidor de desarrollo
 php artisan serve
 
 ## Usabilidad
 
 ### 1. Inicia sesión
-email: admin@mercatienda.com
-password: 123456
-
-
-
-
-
-
+- email: admin@mercatienda.com
+- password: 123456
